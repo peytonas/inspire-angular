@@ -1,0 +1,11 @@
+<div [ngClass]="setClasses()" class="row justify-content-between bg-primary">
+  <div class="col-2">
+    <p>
+      <input (change)="onToggle(todo)" type="checkBox" />
+      {{todo.title}}
+    </p>
+  </div>
+  <div class="col-1 text-center">
+    <button (click)="onDelete(todo)" class="del btn btn-danger">&times;</button>
+  </div>
+</div>
